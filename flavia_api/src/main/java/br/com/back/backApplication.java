@@ -1,15 +1,13 @@
-package com.flavia_api.demo;
+package br.com.back;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FlaviaApiApplication {
+public class backApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FlaviaApiApplication.class, args);
-
-
+        SpringApplication.run(backApplication.class, args);
     }
-
 }
