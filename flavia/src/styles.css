@@ -3,19 +3,53 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 :root {
-    --light-background: #d2232a;
+    --primary-background: #d2232a;
+    --second-background: #000;
+    --text-light-color: #fff;
+    --text-medium-color: #252525;
+  
   } 
 
-#primary-nav {
-    background-color: var(--light-background);
+.primary-color {
+    background-color: var(--primary-background);
   }
 
 .navbar{
   padding: 0!important;
   padding-top: 1rem!important;
   padding-bottom: 1rem!important;
+  margin-bottom: 2rem;
   }
 
+.navbar a {
+  color: var(--text-light-color);
+}
+
+.btn{
+  color: var(--text-light-color);
+}
+
+.btn:hover{
+  color: var(--text-light-color);
+  background: var(--second-background);
+}
+
 .content{
-    padding-top: 5rem ;
+    padding-top: 1rem ;
   }
+
+.text-primary {
+    color: #d2232a!important;
+}
+
+.card-deck{
+  margin-top: 2rem;
+}
+
+.cards-event{
+  margin-top: 2rem;
+}
+
+.card-title{
+  font-size: 1.7rem;
+}
