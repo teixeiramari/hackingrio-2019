@@ -40,11 +40,13 @@ h3{
 .btn{
   color: var(--text-light-color);
   background-color: var(--primary-color);
+  
 }
 
 .btn:hover{
   color: var(--text-light-color);
   background-color: var(--second-color);
+  cursor: pointer;
 }
 
 .btn:hover:disabled{
@@ -52,6 +54,7 @@ h3{
   background-color: var(--primary-color);
   cursor: default;
 }
+
 
 /* Icon*/
 .fa{
