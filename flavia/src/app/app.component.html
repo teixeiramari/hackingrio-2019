@@ -50,13 +50,15 @@
         <li class="list-group-item">Campeonato : Brasileirão Série A</li>
       </ul>
       <div class="card-footer text-right">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
-              Abrir modal de demonstração
+          <button (click)="click()" type="button" class="btn primary-color" data-toggle="modal" data-target="#modalExemplo">
+              Adicionar Evento
             </button>
-            
-       
       </div>
+     
     </div>
+    <div class="alert alert-info" *ngIf="clicou">
+        Evento agendado com sucesso!
+      </div>
     <div class="card">
       <img class="card-img-top" src="https://i.imgur.com/O9ngUDO.jpg" alt="Card image cap">
       <div class="card-body">
@@ -157,10 +159,16 @@
       </div>
     </div>
   </div>
+<!-- Footer -->
+<footer class="page-footer font-small blue primary-color ">
 
-  <script type="text/javascript">
-  $('#meuModal').on('shown.bs.modal', function () {
-  $('#meuInput').trigger('focus')})
-  </script>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 footer-text">© 2019 Copyright:
+      <a class="footer-link" href="https://mdbootstrap.com/education/bootstrap/"> flamengo.com.br</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
 <router-outlet></router-outlet>

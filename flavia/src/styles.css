@@ -1,19 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+/* Color */
 :root {
     --primary-background: #d2232a;
-    --second-background: #000;
+    --second-color: #000;
     --text-light-color: #fff;
-    --text-medium-color: #252525;
   
   } 
 
+/* Primary background color */
 .primary-color {
     background-color: var(--primary-background);
   }
 
+/* Navbar */
 .navbar{
   padding: 0!important;
   padding-top: 1rem!important;
@@ -25,23 +25,27 @@
   color: var(--text-light-color);
 }
 
+/* Button */
 .btn{
   color: var(--text-light-color);
 }
 
 .btn:hover{
   color: var(--text-light-color);
-  background: var(--second-background);
+  background: var(--second-color);
 }
 
+/* Content */
 .content{
     padding-top: 1rem ;
   }
 
+/* Text */
 .text-primary {
     color: #d2232a!important;
 }
 
+/* Cards */
 .card-deck{
   margin-top: 2rem;
 }
@@ -52,4 +56,21 @@
 
 .card-title{
   font-size: 1.7rem;
+}
+
+/* Footer */
+.page-footer {
+  margin-top: 5rem;
+}
+
+.footer-text{
+  color: var(--text-light-color);
+}
+
+.footer-link{
+  color: var(--second-color);
+}
+
+.footer-link:hover{
+  color: var(--text-light-color);
 }
