@@ -20,6 +20,11 @@ export class HomeComponent implements OnInit {
     this.clicou = true;
   }
 
+  myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
   buscar(busca: string){
     if (busca == "vôlei"){
       this.redireciona = true;
