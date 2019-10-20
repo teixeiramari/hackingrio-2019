@@ -12,13 +12,6 @@ public class FlaviaApiApplication {
         SpringApplication.run(FlaviaApiApplication.class, args);
     }
 
-    @RestController
-    class Teste {
 
-        @GetMapping
-        public String hello () {
-            return "Fale com a Flavinha";
-        }
-    }
 
 }
