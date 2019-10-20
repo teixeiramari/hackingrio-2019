@@ -1,16 +1,19 @@
->Esse é um arquivo de template e tem como o intuito prover uma breve apresentação de seu projeto para avaliadores e mentores. Sinta-se à vontade para editar os tópicos e títulos de acordo com seu gosto ou até mesmo para deletá-lo ou sobrescreve-lo caso o queira. Cheque também o arquivo [repositorio.md](https://github.com/hackingrio/template/blob/master/repositorio.md) para saber o que acontecerá com esse repositório depois que o evento acabar.
-
-# Nome do produto - 2019
-### Nome do grupo / Nome do cluster
+# Flavia - 2019
+### Devzonas / Esportes
 
 #### Apresentação 
 
-Use essa seção para falar sobre as motivações de seu time e de forma breve qual o produto que estão trabalhando. Se possível forneça **o que** seu produto é, por exemplo: Um app, uma aplicação web, gadget, dentre outros.
+Uma plataforma com o intuito de engajar pessoas em esportes femininos, considerando que essa é uma demanda muito carente no cenário atual de nossa sociedade. Como inovação incluímos a Flavia, um bot que representa uma mulher, trazendo representatividade para mulheres dentro do Clube. 
 
 #### O Produto
 
-Entre em mais detalhes sobre seu produto, levantando pontos positivos, o porquê dele ser inovador, relevante para o mercado nacional e para a cidade do Rio de Janeiro.
+Nosso produto, tem por objetivo principal promover eventos esportivos, escalação de seleções, apresentar atletas, compartilhar informações de forma unificada. Dessa forma, facilitando ao usuário que tem interesse no entanto não sabe onde buscar. A grande inovação seria a Fláviam que interage com o público através de hashtags pré-definidas. Flávia não teria um rosto definido, seria apenas uma silhueta para que cada mulher pudesse enxergá-la ao seu modo. Sua silhueta é composta por nomes de atletas que em algum momento contribuíram com seu talento para o Clube.  
+
 
 #### Informações adicionais 
 
-Forneça informações adicionais, adicione novos tópicos ou subtópicos. Use esse arquivo como um guia rápido para manter claro os objetivos de seu projeto para os demais integrantes. Manter o foco conjunto de forma coesa lhe ajudará a criar um produto mais *sólido*.
+Tecnologias utilizadas: 
+
+- Angular 
+- Java 
+- Node (Bot) 
