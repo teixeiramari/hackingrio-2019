@@ -13,6 +13,10 @@ h3{
     font-weight: bold;
   }
 
+.primary-color{
+  background-color: var(--primary-color);
+}
+
 /* Navbar */
 .navbar{
   padding: 0!important;
