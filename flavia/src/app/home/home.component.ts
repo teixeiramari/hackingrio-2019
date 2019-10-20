@@ -20,10 +20,6 @@ export class HomeComponent implements OnInit {
     this.clicou = true;
   }
 
-  close(){
-    this.clicou = false;
-  }
-
   buscar(busca: string){
     if (busca == "vôlei"){
       this.redireciona = true;

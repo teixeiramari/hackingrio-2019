@@ -17,7 +17,7 @@
 <h3 class="cards-event text-primary">Próximos jogos</h3>
 <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" src="https://i.imgur.com/Uf2aO2w.jpg" alt="Futebol Feminino Flamengo">
+    <img class="card-img-top home-img" src="https://i.imgur.com/Uf2aO2w.jpg" alt="Futebol Feminino Flamengo">
     <div class="card-body">
       <h5 class="card-title">Futebol</h5>
     </div>
@@ -35,7 +35,7 @@
   </div>
   
   <div class="card">
-    <img class="card-img-top" src="https://i.imgur.com/O9ngUDO.jpg" alt="Card image cap">
+    <img class="card-img-top home-img" src="https://i.imgur.com/O9ngUDO.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Vólei</h5>
     </div>
@@ -43,14 +43,16 @@
         <li class="list-group-item">Flamengo X Fluminense</li>
         <li class="list-group-item">Sáb, 26/10 13:30</li>
         <li class="list-group-item">Desafio MG x RJ</li>
-      </ul>
-    <div class="card-footer text-right">
-      <a href="#" class="btn primary-color">Adicionar Evento</a>
+      </ul><div class="card-footer text-right">
+          <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+            <button (click)="click()" type="button" class="btn primary-color" data-toggle="modal" data-target="#modalExemplo">
+              Adicionar Evento
+            </button>
     </div>
   </div>
 
   <div class="card">
-    <img class="card-img-top" src="https://i.imgur.com/8kptHzN.jpg" alt="Card image cap">
+    <img class="card-img-top home-img" src="https://i.imgur.com/8kptHzN.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Natação</h5>
     </div>
@@ -58,23 +60,25 @@
         <li class="list-group-item">Time Flamengo</li>
         <li class="list-group-item">Dom, 27/10 11:00</li>
         <li class="list-group-item">Festival Sudeste Mirim</li>
-      </ul>
-    <div class="card-footer text-right">
-      <a href="#" class="btn primary-color">Adicionar Evento</a>
+      </ul><div class="card-footer text-right">
+          <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+            <button (click)="click()" type="button" class="btn primary-color" data-toggle="modal" data-target="#modalExemplo">
+              Adicionar Evento
+            </button>
+            
     </div>
   </div>
 </div>
-<div class="alert alert-info" *ngIf="clicou">
-  Evento agendado com sucesso!
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-</div>
+ <!-- Alert -->
+ <div class="alert alert-info" *ngIf="clicou">
+    Evento agendado com sucesso!
+  </div>
+
 
 <h3 class="cards-event text-primary">Sugestões</h3>
 <div class="card-deck">
     <div class="card">
-      <img class="card-img-top" src="https://i.imgur.com/SDt00qW.jpg" alt="Futebol Feminino Flamengo">
+      <img class="card-img-top home-img" src="https://i.imgur.com/SDt00qW.jpg" alt="Futebol Feminino Flamengo">
       <div class="card-body">
         <h5 class="card-title">Nado Artístico</h5>
       </div>
@@ -82,16 +86,16 @@
         <li class="list-group-item">Rubro Negro</li>
         <li class="list-group-item">Dom, 27/10 21:10</li>
         <li class="list-group-item">Campeonato Estadual</li>
-      </ul>
-      <div class="card-footer text-right">
-        <button (click)="click()" type="button" class="btn primary-color" data-toggle="modal" data-target="#modalExemplo">
-          Adicionar Evento
-        </button>
-       
-      </div>
+      </ul><div class="card-footer text-right">
+          <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+            <button (click)="click()" type="button" class="btn primary-color" data-toggle="modal" data-target="#modalExemplo">
+              Adicionar Evento
+            </button>
     </div>
+  </div>
+
     <div class="card">
-      <img class="card-img-top" src="https://i.imgur.com/IW8aflH.jpg" alt="Card image cap">
+      <img class="card-img-top home-img" src="https://i.imgur.com/IW8aflH.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Judô</h5>
       </div>
@@ -100,13 +104,14 @@
           <li class="list-group-item">Seg, 02/12 17:30</li>
           <li class="list-group-item">Circuito Rio de Janeiro</li>
         </ul>
-      <div class="card-footer text-right">
-        <a href="#" class="btn primary-color">Adicionar Evento</a>
-      </div>
+        <div class="card-footer text-right">
+            <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+          <a href="#" class="btn primary-color">Adicionar Evento</a>
+        </div>
     </div>
 
     <div class="card">
-      <img class="card-img-top" src="https://i.imgur.com/pnLCtyQ.jpg" alt="Card image cap">
+      <img class="card-img-top home-img" src="https://i.imgur.com/pnLCtyQ.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Ginástica Artística</h5>
       </div>
@@ -115,9 +120,10 @@
           <li class="list-group-item">Qui, 31/10 20:40</li>
           <li class="list-group-item">Mundial de Stuttgart</li>
         </ul>
-      <div class="card-footer text-right">
-        <a href="#" class="btn primary-color">Adicionar Evento</a>
-      </div>
+        <div class="card-footer text-right">
+            <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+          <a href="#" class="btn primary-color">Adicionar Evento</a>
+        </div>
     </div>
   </div>
 </div>

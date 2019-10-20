@@ -49,6 +49,7 @@ h3{
   background: none;
 }
 
+/* Icon*/
 .fa{
   float: left;
   padding-top: 5px;
@@ -66,7 +67,20 @@ h3{
 
 /* Text */
 .text-primary {
-    color: #d2232a!important;
+    color: var(--primary-color)!important;
+}
+
+.cons-title{
+  text-align: center;
+  color: var(--primary-color);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}
+
+.sub-text{
+  text-align: center;
+  color: var(--second-color);
+  font-family: 'Rajdhani', sans-serif;
 }
 
 /* Search Form */
@@ -90,9 +104,18 @@ h3{
   color: var(--second-color);
 }
 
-.card-img-top{
+.home-img{
   height: 50%;
 }
+
+.card-group{
+  margin-top: 2rem;
+}
+
+.cons-img{
+  height: 60%;
+}
+
 
 /* Footer */
 .page-footer {
