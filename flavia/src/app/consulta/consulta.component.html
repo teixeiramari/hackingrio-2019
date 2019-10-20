@@ -2,12 +2,14 @@
 <div class = "container content"> 
 
         <!-- Search -->
-            <form action="">
+            <form (submit)="buscar()">
                <div class="p-1 bg-light  shadow-sm mb-4">
                  <div class="input-group">
-                   <input type="search" placeholder="Buscar esportes" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                   <input type="text" placeholder="Buscar esportes" aria-describedby="button-addon1" 
+                   class="form-control border-0 bg-light" id='textoBuscado' name="textoBuscado" [(ngModel)]="textoBuscado">
                    <div class="input-group-append">
-                     <button routerLink="/consulta" id="button-addon1" type="submit" class="form-control border-0 bg-light"><i class="fa fa-search"></i></button>
+                     <button *ngIf="ehIgual" routerLink="/consulta" id="button-addon1" type="submit" class="form-control border-0 bg-light"><i class="fa fa-search"></i></button>
+                     <button *ngIf="!ehIgual" id="button-addon1" type="submit" class="form-control border-0 bg-light"><i class="fa fa-search"></i></button>
                    </div>
                  </div>
                </div>

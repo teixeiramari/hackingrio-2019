@@ -6,12 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consulta.component.css']
 })
 export class ConsultaComponent implements OnInit {
+  
+  textoBuscado: string;
+  ehIgual: boolean;
 
   constructor() { }
 
   ngOnInit() {
   }
   
+  buscar() {
+    if(this.textoBuscado == "Vôlei"){
+      this.ehIgual = true;
+    } else {
+      this.ehIgual = false;
+    }
+  }
+
   actionMethod() {
     console.log("actionMethod was called!");
   }

@@ -6,16 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  
+  textoBuscado: string;
+  ehIgual: boolean;
 
-  clicou: boolean;
-  redireciona: boolean;
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  clicked = false;
 
   actionMethod() {
     console.log("actionMethod was called!");
@@ -51,9 +50,11 @@ export class HomeComponent implements OnInit {
     popup.classList.toggle("show");
   }
 
-  buscar(busca: string){
-    if (busca == "vôlei"){
-      this.redireciona = true;
+  buscar() {
+    if(this.textoBuscado == "Vôlei"){
+      this.ehIgual = true;
+    } else {
+      this.ehIgual = false;
     }
   }
 }
