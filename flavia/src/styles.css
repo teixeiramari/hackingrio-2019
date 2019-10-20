@@ -34,24 +34,22 @@ h3{
   color: var(--text-light-color);
 }
 
-/* Span*/
 
-.span:hover{
-  cursor: default;
-}
-
-.popup:hover{
-  cursor: default;
-}
-
-/* Button */
+/* button */
 
 .btn{
+  color: var(--text-light-color);
   background-color: var(--primary-color);
 }
 
+.btn:hover{
+  color: var(--text-light-color);
+  background-color: var(--second-color);
+}
 
 .btn:hover:disabled{
+  color: var(--text-light-color);
+  background-color: var(--primary-color);
   cursor: default;
 }
 
