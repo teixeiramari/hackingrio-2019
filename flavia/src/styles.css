@@ -49,6 +49,11 @@ h3{
   background: none;
 }
 
+.btn.disabled, .btn:disabled:hover{
+   cursor: default;
+ 
+}
+
 /* Icon*/
 .fa{
   float: left;
