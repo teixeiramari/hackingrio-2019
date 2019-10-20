@@ -23,12 +23,14 @@
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Flamengo X Fluminense</li>
-            <li class="list-group-item">Sáb, 26/10 13:30</li>
+            <li class="list-group-item">Maracanãzinho - Sáb, 26/10 13:30</li>
             <li class="list-group-item">Desafio MG x RJ</li>
           </ul><div class="card-footer text-right">
               <a routerLink="/time"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
-              <button  class="popup btn primary-color" (click)="myFunction()" type="button">Adicionar Evento
-                  <span class="popuptext" id="myPopup">Evento agendado!</span>
+              <div class="popup"><span class="popuptext primary-color" id="myPopup">Evento agendado!</span></div>
+              
+              <button  class="popup btn primary-color" (click)="myFunction(); actionMethod(); clicked = true;" [disabled]="clicked" type="button">Adicionar Evento
+                 
               </button>
         </div>
       </div>
@@ -41,15 +43,17 @@
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">Flamengo X Botafogo</li>
-      <li class="list-group-item">Dom, 27/10 16:30</li>
+      <li class="list-group-item">Maracanã - Dom, 27/10 16:30</li>
       <li class="list-group-item">Brasileirão Série A</li>
     </ul>
     <div class="card-footer text-right">
        
-        <a ><i  class="fa fa-info fa-2x" aria-hidden="true"></i></a>
-          <button  class="popup btn primary-color" type="button">Adicionar Evento
-              <span class="popuptext" id="myPopup">Evento agendado!</span>
-          </button>
+        <a routerLink="/time"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+        <div class="popup"><span class="popuptext primary-color" id="myPopup2">Evento agendado!</span></div>
+        
+        <button  class="popup btn primary-color" (click)="myFunction2(); actionMethod(); clicked2 = true;" [disabled]="clicked2" type="button">Adicionar Evento
+           
+        </button>
   </div>
   </div>
 
@@ -61,12 +65,14 @@
     </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">Time Flamengo</li>
-        <li class="list-group-item">Ter, 29/10 11:00</li>
+        <li class="list-group-item">Beira-Rio - Ter, 29/10 11:00</li>
         <li class="list-group-item">Festival Sudeste Mirim</li>
       </ul><div class="card-footer text-right">
-          <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
-          <button  class="popup btn primary-color"  type="button">Adicionar Evento
-              <span class="popuptext" id="myPopup">Evento agendado!</span>
+          <a routerLink="/time"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+          <div class="popup"><span class="popuptext primary-color" id="myPopup3">Evento agendado!</span></div>
+        
+          <button  class="popup btn primary-color" (click)="myFunction3(); actionMethod(); clicked3 = true;" [disabled]="clicked3" type="button">Adicionar Evento
+             
           </button>
     </div>
   </div>
@@ -80,19 +86,17 @@
       <img class="card-img-top home-img" src="https://i.imgur.com/SDt00qW.jpg" alt="Futebol Feminino Flamengo">
       <div class="card-body">
         <h5 class="card-title">Nado Artístico</h5>
-         <!-- Alert -->
-         <div class="alert-color" *ngIf="clicou">
-            Evento agendado com sucesso!
-            </div>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Rubro Negro</li>
-        <li class="list-group-item">Dom, 27/10 21:10</li>
+        <li class="list-group-item">Pacaembu - Dom, 27/10 21:10</li>
         <li class="list-group-item">Campeonato Estadual</li>
       </ul><div class="card-footer text-right">
-          <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
-          <button  class="popup btn primary-color" (click)="myFunction()" type="button">Adicionar Evento
-              <span class="popuptext" id="myPopup">Evento agendado!</span>
+          <a routerLink="/time"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+          <div class="popup"><span class="popuptext primary-color" id="myPopup4">Evento agendado!</span></div>
+        
+          <button  class="popup btn primary-color" (click)="myFunction4(); actionMethod(); clicked4 = true;" [disabled]="clicked4" type="button">Adicionar Evento
+             
           </button>
     </div>
   </div>
@@ -104,13 +108,15 @@
       </div>
       <ul class="list-group list-group-flush">
           <li class="list-group-item">Sarah Menezes</li>
-          <li class="list-group-item">Seg, 02/12 17:30</li>
+          <li class="list-group-item">Santa Cruz - Seg, 02/12 17:30</li>
           <li class="list-group-item">Circuito Rio de Janeiro</li>
         </ul>
         <div class="card-footer text-right">
-            <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
-            <button  class="popup btn primary-color" (click)="myFunction()" type="button">Adicionar Evento
-                <span class="popuptext" id="myPopup">Evento agendado!</span>
+            <a routerLink="/time"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+            <div class="popup"><span class="popuptext primary-color" id="myPopup5">Evento agendado!</span></div>
+        
+            <button  class="popup btn primary-color" (click)="myFunction5(); actionMethod(); clicked5 = true;" [disabled]="clicked5" type="button">Adicionar Evento
+               
             </button>
         </div>
     </div>
@@ -122,13 +128,15 @@
       </div>
       <ul class="list-group list-group-flush">
           <li class="list-group-item">Flavia Saraiva</li>
-          <li class="list-group-item">Qui, 31/10 20:40</li>
+          <li class="list-group-item">Arena Joinville - Qui, 31/10 20:40</li>
           <li class="list-group-item">Mundial de Stuttgart</li>
         </ul>
         <div class="card-footer text-right">
-            <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
-            <button  class="popup btn primary-color" (click)="myFunction()" type="button">Adicionar Evento
-                <span class="popuptext" id="myPopup">Evento agendado!</span>
+            <a routerLink="/time"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+            <div class="popup"><span class="popuptext primary-color" id="myPopup6">Evento agendado!</span></div>
+        
+            <button  class="popup btn primary-color" (click)="myFunction6(); actionMethod(); clicked6 = true;" [disabled]="clicked6" type="button">Adicionar Evento
+               
             </button>
         </div>
     </div>
