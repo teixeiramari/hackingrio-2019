@@ -40,7 +40,6 @@ h3{
 .btn{
   color: var(--text-light-color);
   background-color: var(--primary-color);
-  
 }
 
 .btn:hover{
@@ -55,6 +54,9 @@ h3{
   cursor: default;
 }
 
+.popup .show:hover{
+  cursor: default;
+}
 
 /* Icon*/
 .fa{
@@ -193,7 +195,7 @@ h3{
   border-color: black transparent transparent transparent;
 }
 
-/* Toggle this class */
+/* Popup show*/
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
@@ -202,7 +204,7 @@ h3{
 }
 
 
-/* Add animation (fade in the popup) */
+/* Fade in */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
   to {opacity: 1;}
