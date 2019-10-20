@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'flavia';
-
-  clicou: boolean;
-
-  click(){
-    this.clicou = true;
-  }
 }
 
 
