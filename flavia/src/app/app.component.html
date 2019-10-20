@@ -1,12 +1,8 @@
   <!-- Nav-bar -->
-<div id="primary-nav">
+<div class="primary-color">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <a class="navbar-brand" href="#">
-       
-        Bootstrap
-      </a>
-    
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Bootstrap</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -20,14 +16,31 @@
         </ul>
     </nav>
   </div>
- 
 </div>
 
+<!-- Cards & Search -->
 <div class = "container content"> 
+
+      <!-- Search -->
+          <form action="">
+             <div class="p-1 bg-light  shadow-sm mb-4">
+               <div class="input-group">
+                 <input type="search" placeholder="Buscar esportes" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                 <div class="input-group-append">
+                   <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+                 </div>
+               </div>
+             </div>
+           </form>
+  
+
+ 
+
+<!-- Cards -->
+ <h3 class="cards-event text-primary">Próximos jogos</h3>
   <div class="card-deck">
     <div class="card">
-      <img class="card-img-top" src="https://i.imgur.com/Uf2aO2w.jpg" alt="Card image cap">
-     
+      <img class="card-img-top" src="https://i.imgur.com/Uf2aO2w.jpg" alt="Futebol Feminino Flamengo">
       <div class="card-body">
         <h5 class="card-title">Futebol</h5>
       </div>
@@ -37,15 +50,17 @@
         <li class="list-group-item">Campeonato : Brasileirão Série A</li>
       </ul>
       <div class="card-footer text-right">
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-    
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+              Abrir modal de demonstração
+            </button>
+            
        
       </div>
     </div>
     <div class="card">
       <img class="card-img-top" src="https://i.imgur.com/O9ngUDO.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Vólei</h5>
       </div>
       <ul class="list-group list-group-flush">
           <li class="list-group-item">XYZ</li>
@@ -53,9 +68,10 @@
           <li class="list-group-item">KWL</li>
         </ul>
       <div class="card-footer text-right">
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn primary-color">Adicionar Evento</a>
       </div>
     </div>
+
     <div class="card">
       <img class="card-img-top" src="https://i.imgur.com/8kptHzN.jpg" alt="Card image cap">
       <div class="card-body">
@@ -67,11 +83,84 @@
           <li class="list-group-item">KWL</li>
         </ul>
       <div class="card-footer text-right">
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn primary-color">Adicionar Evento</a>
       </div>
     </div>
   </div>
+
+  <h3 class="cards-event text-primary">Sugestões</h3>
+  <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://i.imgur.com/Uf2aO2w.jpg" alt="Futebol Feminino Flamengo">
+        <div class="card-body">
+          <h5 class="card-title">Futebol</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Flamengo X Fluminense</li>
+          <li class="list-group-item">Qua, 23/10 16:30</li>
+          <li class="list-group-item">Campeonato : Brasileirão Série A</li>
+        </ul>
+        <div class="card-footer text-right">
+          <a href="#" class="btn primary-color">Adicionar Evento</a>
+         
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://i.imgur.com/O9ngUDO.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Vólei</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">XYZ</li>
+            <li class="list-group-item">Qua, 23/10 16:30</li>
+            <li class="list-group-item">KWL</li>
+          </ul>
+        <div class="card-footer text-right">
+          <a href="#" class="btn primary-color">Adicionar Evento</a>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img class="card-img-top" src="https://i.imgur.com/8kptHzN.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Natação</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">XYZ</li>
+            <li class="list-group-item">Qua, 23/10 16:30</li>
+            <li class="list-group-item">KWL</li>
+          </ul>
+        <div class="card-footer text-right">
+          <a href="#" class="btn primary-color">Adicionar Evento</a>
+        </div>
+      </div>
+    </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar mudanças</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  $('#meuModal').on('shown.bs.modal', function () {
+  $('#meuInput').trigger('focus')})
+  </script>
 
 <router-outlet></router-outlet>
