@@ -15,8 +15,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+
   click(){
     this.clicou = true;
+  }
+
+  close(){
+    this.clicou = false;
   }
 
   buscar(busca: string){

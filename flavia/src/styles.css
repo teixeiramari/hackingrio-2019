@@ -2,15 +2,20 @@
 
 /* Color */
 :root {
-    --primary-background: #d2232a;
+    --primary-color: #d2232a;
     --second-color: #000;
     --text-light-color: #fff;
-  
   } 
 
 /* Primary background color */
 .primary-color {
-    background-color: var(--primary-background);
+    background-color: var(--primary-color);
+  }
+
+/* Font */
+h3{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
   }
 
 /* Navbar */
@@ -21,6 +26,11 @@
   margin-bottom: 2rem;
   }
 
+.navbar-brand{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Rajdhani', sans-serif;
+}
 .navbar a {
   color: var(--text-light-color);
 }
@@ -35,6 +45,20 @@
   background: var(--second-color);
 }
 
+.btn-link:hover{
+  background: none;
+}
+
+.fa{
+  float: left;
+  padding-top: 5px;
+  vertical-align: center;
+  color: var(--primary-color);
+}
+.fa:hover{
+  cursor: pointer;
+}
+
 /* Content */
 .content{
     padding-top: 1rem ;
@@ -43,6 +67,11 @@
 /* Text */
 .text-primary {
     color: #d2232a!important;
+}
+
+/* Search Form */
+.form-control{
+  font-family: 'Rajdhani', sans-serif;
 }
 
 /* Cards */
@@ -56,6 +85,13 @@
 
 .card-title{
   font-size: 1.7rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  color: var(--second-color);
+}
+
+.card-img-top{
+  height: 50%;
 }
 
 /* Footer */

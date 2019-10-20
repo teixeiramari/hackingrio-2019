@@ -12,6 +12,7 @@
              </div>
            </div>
          </form>
+         
 <!-- Cards -->
 <h3 class="cards-event text-primary">Próximos jogos</h3>
 <div class="card-deck">
@@ -21,29 +22,27 @@
       <h5 class="card-title">Futebol</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Flamengo X Fluminense</li>
+      <li class="list-group-item">Flamengo X Botafogo</li>
       <li class="list-group-item">Qua, 23/10 16:30</li>
-      <li class="list-group-item">Campeonato : Brasileirão Série A</li>
+      <li class="list-group-item">Brasileirão Série A</li>
     </ul>
     <div class="card-footer text-right">
-        <button (click)="click()" type="button" class="btn primary-color" data-toggle="modal" data-target="#modalExemplo">
+        <a><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
+          <button (click)="click()" type="button" class="btn primary-color" data-toggle="modal" data-target="#modalExemplo">
             Adicionar Evento
           </button>
-    </div>
-   
   </div>
-  <div class="alert alert-info" *ngIf="clicou">
-      Evento agendado com sucesso!
-    </div>
+  </div>
+  
   <div class="card">
     <img class="card-img-top" src="https://i.imgur.com/O9ngUDO.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Vólei</h5>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">XYZ</li>
-        <li class="list-group-item">Qua, 23/10 16:30</li>
-        <li class="list-group-item">KWL</li>
+        <li class="list-group-item">Flamengo X Fluminense</li>
+        <li class="list-group-item">Sáb, 26/10 13:30</li>
+        <li class="list-group-item">Desafio MG x RJ</li>
       </ul>
     <div class="card-footer text-right">
       <a href="#" class="btn primary-color">Adicionar Evento</a>
@@ -56,42 +55,50 @@
       <h5 class="card-title">Natação</h5>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">XYZ</li>
-        <li class="list-group-item">Qua, 23/10 16:30</li>
-        <li class="list-group-item">KWL</li>
+        <li class="list-group-item">Time Flamengo</li>
+        <li class="list-group-item">Dom, 27/10 11:00</li>
+        <li class="list-group-item">Festival Sudeste Mirim</li>
       </ul>
     <div class="card-footer text-right">
       <a href="#" class="btn primary-color">Adicionar Evento</a>
     </div>
   </div>
 </div>
+<div class="alert alert-info" *ngIf="clicou">
+  Evento agendado com sucesso!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
 
 <h3 class="cards-event text-primary">Sugestões</h3>
 <div class="card-deck">
     <div class="card">
-      <img class="card-img-top" src="https://i.imgur.com/Uf2aO2w.jpg" alt="Futebol Feminino Flamengo">
+      <img class="card-img-top" src="https://i.imgur.com/SDt00qW.jpg" alt="Futebol Feminino Flamengo">
       <div class="card-body">
-        <h5 class="card-title">Futebol</h5>
+        <h5 class="card-title">Nado Artístico</h5>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">Flamengo X Fluminense</li>
-        <li class="list-group-item">Qua, 23/10 16:30</li>
-        <li class="list-group-item">Campeonato : Brasileirão Série A</li>
+        <li class="list-group-item">Rubro Negro</li>
+        <li class="list-group-item">Dom, 27/10 21:10</li>
+        <li class="list-group-item">Campeonato Estadual</li>
       </ul>
       <div class="card-footer text-right">
-        <a href="#" class="btn primary-color">Adicionar Evento</a>
+        <button (click)="click()" type="button" class="btn primary-color" data-toggle="modal" data-target="#modalExemplo">
+          Adicionar Evento
+        </button>
        
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top" src="https://i.imgur.com/O9ngUDO.jpg" alt="Card image cap">
+      <img class="card-img-top" src="https://i.imgur.com/IW8aflH.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Vólei</h5>
+        <h5 class="card-title">Judô</h5>
       </div>
       <ul class="list-group list-group-flush">
-          <li class="list-group-item">XYZ</li>
-          <li class="list-group-item">Qua, 23/10 16:30</li>
-          <li class="list-group-item">KWL</li>
+          <li class="list-group-item">Sarah Menezes</li>
+          <li class="list-group-item">Seg, 02/12 17:30</li>
+          <li class="list-group-item">Circuito Rio de Janeiro</li>
         </ul>
       <div class="card-footer text-right">
         <a href="#" class="btn primary-color">Adicionar Evento</a>
@@ -99,14 +106,14 @@
     </div>
 
     <div class="card">
-      <img class="card-img-top" src="https://i.imgur.com/8kptHzN.jpg" alt="Card image cap">
+      <img class="card-img-top" src="https://i.imgur.com/pnLCtyQ.jpg" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Natação</h5>
+        <h5 class="card-title">Ginástica Artística</h5>
       </div>
       <ul class="list-group list-group-flush">
-          <li class="list-group-item">XYZ</li>
-          <li class="list-group-item">Qua, 23/10 16:30</li>
-          <li class="list-group-item">KWL</li>
+          <li class="list-group-item">Flavia Saraiva</li>
+          <li class="list-group-item">Qui, 31/10 20:40</li>
+          <li class="list-group-item">Mundial de Stuttgart</li>
         </ul>
       <div class="card-footer text-right">
         <a href="#" class="btn primary-color">Adicionar Evento</a>
@@ -115,34 +122,14 @@
   </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Salvar mudanças</button>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- Footer -->
 <footer class="page-footer font-small blue primary-color ">
 
-  <!-- Copyright -->
+<!-- Copyright -->
   <div class="footer-copyright text-center py-3 footer-text">© 2019 Copyright:
     <a class="footer-link" href="https://mdbootstrap.com/education/bootstrap/"> flamengo.com.br</a>
   </div>
-  <!-- Copyright -->
+<!-- Copyright -->
 
 </footer>
 <!-- Footer -->
