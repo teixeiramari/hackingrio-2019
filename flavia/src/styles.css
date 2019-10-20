@@ -189,12 +189,11 @@ h3{
 /* Toggle this class */
 .popup .show {
   visibility: visible;
-  animation: fdio  10s infinite;
-  background:#d2232a;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  background: #d2232a;
 }
-@keyframes fdio {
-  50% {opacity:0;}
-}
+
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
