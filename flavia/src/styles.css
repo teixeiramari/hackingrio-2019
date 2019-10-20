@@ -7,11 +7,6 @@
     --text-light-color: #fff;
   } 
 
-/* Primary background color */
-.primary-color {
-    background-color: var(--primary-color);
-  }
-
 /* Font */
 h3{
     font-family: 'Rajdhani', sans-serif;
@@ -35,23 +30,25 @@ h3{
   color: var(--text-light-color);
 }
 
+/* Span*/
+
+.span:hover{
+  cursor: default;
+}
+
+.popup:hover{
+  cursor: default;
+}
+
 /* Button */
+
 .btn{
-  color: var(--text-light-color);
+  background-color: var(--primary-color);
 }
 
-.btn:hover{
-  color: var(--text-light-color);
-  background: var(--second-color);
-}
 
-.btn-link:hover{
-  background: none;
-}
-
-.btn.disabled, .btn:disabled:hover{
-   cursor: default;
- 
+.btn:hover:disabled{
+  cursor: default;
 }
 
 /* Icon*/
