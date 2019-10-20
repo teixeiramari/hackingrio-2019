@@ -104,6 +104,10 @@ h3{
   color: var(--second-color);
 }
 
+.card-body{
+  padding: 1rem!important;
+}
+
 .home-img{
   height: 50%;
 }
@@ -114,6 +118,13 @@ h3{
 
 .cons-img{
   height: 60%;
+}
+
+/* Alert */
+.alert-color{ 
+  color: var(--primary-color)!important;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
 }
 
 
